@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevasionx</title>
+    <link rel="icon" href="logo2.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+
+
+    /* #home {
+        background-size: cover;
+        background-position: center;
+    } */
+     /* Hide the navigation bar by default */
+     /* #navbar {
+        transition: top 0.3s;
+        background-image:url(blue.png) ;
+        background-size: cover;
+    } */
+   /*  #navbar.hidden {
+        top: -64px;
+    } */
+     /* Mobile Menu */
+     #mobile-menu {
+        display: none;
+    }
+    .bg-black-50 {
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    }
+    #more {display: none;}
+    @media (max-width: 1100px) {
+        #mobile-menu {
+            display: block;
+        }
+        #navbar ul {
+            display: none;
+        }
+        #navbar ul.show {
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            position: absolute;
+            top: 60px; /* Adjust the height of your navbar */
+            left: 0;
+            width: 100%;
+            padding: 20px;
+        }
+        #navbar ul.show li {
+            margin-bottom: 10px;
+        }
+
+      
+    }
+</style>
+</head>
+<body class="bg-gray-100 w-full ">
+<!-- Navigation -->
+<nav id="navbar" class="fixed top-0 left-0 w-full bg-white py-4 z-10 ">
+<div class=" px-4 flex justify-between items-center">
+    <a href="#" class="text-black-900 text-4xl font-bold flex items-center justify-center">
+        <img class="align-middle mr-3 pt-1 h-10" src="logo2.png" alt="Logo" >
+        Elevasionx</a>
+    <!-- Mobile Menu Icon -->
+    <div id="mobile-menu" class="text-black cursor-pointer">
+        <div style="background-color: rgba(0, 0, 0, 0); padding: 5px; display: inline-block;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 12h18M3 6h18M3 18h18"></path>
+            </svg>
+        </div>
+    </div>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-9 ">
+        <li><a href="#caseStudies" class="text-black-900 font-bold text-lg">Case Studies </a></li>
+        <li><a href="#testimonials" class="text-black-900 font-bold text-lg">Testimonialst</a></li>
+        <li><a href="#whyUs" class="text-black-900 font-bold text-lg">Why Us</a></li>
+        <li><a href="#ourStrategy" class="text-black-900 font-bold text-lg">Our strategy</a></li>
+        <li><a href="#blog" class="text-black-900 font-bold text-lg">Blog</a></li>
+
+    </ul>
+    <ul ><li>
+    <button onclick="myFunction()" class="  bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 px-7 py-4 text-sm leading-5 rounded-full font-semibold text-white">
+        GET Free Audit
+      </button></li></ul>
+</div>
+<!-- Mobile Menu -->
+<ul id="mobile-menu-dropdown" class="hidden  gap-y-8">
+    <li><a href="#caseStudies" class="text-white text-3xl "> Case Studies</a></li>
+    <li><a href="#testimonials" class="text-white text-3xl">Testimonials</a></li>
+    <li><a href="#whyUs" class="text-white text-3xl">Why Us</a></li>
+    <li><a href="#ourStrategy" class="text-white text-3xl">Our strategy</a></li>
+    <li><a href="#blog" class="text-white text-3xl">Blog</a></li>
+    <li><button onclick="myFunction()" class="btn   text-3xl bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 px-28 py-2  leading-5 rounded-full font-semibold text-white">
+        GET Free Audit
+      </button></li>
+</ul>
+</nav>
+
+
+<!-- Main Content -->
+<div class="w-full">
+
+<!-- Home Section -->
+
+<section id="home" class=" relative flex items-center justify-center bg-cover text-center" style="background-image: url('front.jpeg'); height: 100vh;">
+<div class="absolute inset-0 bg-black-50"></div> <!-- Overlay -->
+<div class="relative z-9">
+    <h2 class="text-8xl font-semibold text-white mb-4">Bring your Business Online</h2>
+    <p class="text-5xl font-bold text-white">with IT Company Services</p>
+</div>
+</section>
+</div>
+<script>document.addEventListener('DOMContentLoaded', function () {
+    var homeSection = document.getElementById('home');
+    homeSection.style.height = window.innerHeight + 'px';
+});
+
+// Update the height of the home section when the window is resized
+window.addEventListener('resize', function () {
+    var homeSection = document.getElementById('home');
+    homeSection.style.height = window.innerHeight + 'px';
+});
+
+const mobileMenuIcon = document.getElementById('mobile-menu');
+const mobileMenuDropdown = document.getElementById('mobile-menu-dropdown');
+
+mobileMenuIcon.addEventListener('click', function() {
+    mobileMenuDropdown.classList.toggle('show');
+});</script>
+</body>
+</html>
