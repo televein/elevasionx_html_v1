@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elevasionx</title>
+    <title>ElevasionX</title>
     <link rel="icon" href="logo2.png">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -118,7 +118,10 @@
   --clr-primary-800: hsl(217, 33%, 17%);
   --clr-primary-900: hsl(218, 33%, 9%);
 }
-
+.client{
+  width: 150px;
+   height: 60px;
+}
 
 
 
@@ -130,15 +133,12 @@
 
 .tag-list li {
   padding: 1rem;
-  background: var(--clr-primary-400);
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+  background: transparent;
+  /* border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900); */
 }
 
 /* for testing purposed to ensure the animation lined up correctly */
-.test {
-  background: red !important;
-}
 
 </style>
 </head>
@@ -148,7 +148,7 @@
 <div class=" px-4 flex justify-between items-center">
     <a href="#" class="text-black-900 text-4xl font-bold flex items-center justify-center">
         <img class="align-middle mr-3 pt-1 h-10" src="logo2.png" alt="Logo" >
-        Elevasionx</a>
+        ElevasionX</a>
     <!-- Mobile Menu Icon -->
     <div id="mobile-menu" class="text-black cursor-pointer">
         <div style="background-color: rgba(0, 0, 0, 0); padding: 5px; display: inline-block;">
@@ -167,9 +167,10 @@
 
     </ul>
     <ul ><li>
-    <button onclick="myFunction()" class="  bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 px-7 py-4 text-sm leading-5 rounded-full font-semibold text-white">
+      <a href="https://calendly.com/ram-mono/getting_clients" class="bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 px-7 py-4 text-sm leading-5 rounded-full font-semibold text-white">
         GET Free Audit
-      </button></li></ul>
+    </a>
+    </li></ul>
 </div>
 <!-- Mobile Menu -->
 <ul id="mobile-menu-dropdown" class="hidden  gap-y-8">
@@ -178,9 +179,10 @@
     <li><a href="#whyUs" class="text-white text-3xl">Why Us</a></li>
     <li><a href="#ourStrategy" class="text-white text-3xl">Our strategy</a></li>
     <li><a href="#blog" class="text-white text-3xl">Blog</a></li>
-    <li><button onclick="myFunction()" class="btn   text-3xl bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 px-28 py-2  leading-5 rounded-full font-semibold text-white">
-        GET Free Audit
-      </button></li>
+    <li><a href="https://calendly.com/ram-mono/getting_clients" target="_blank" class="btn text-3xl bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 px-28 py-2 leading-5 rounded-full font-semibold text-white">
+      GET Free Audit
+  </a>
+  </li>
 </ul>
 </nav>
 
@@ -190,80 +192,280 @@
 
 <!-- Home Section -->
 
-<section id="home" class=" relative flex items-center justify-center bg-cover text-center" style="background-image: url('home.jpeg'); height: 100vh;">
+<section id="home" class=" relative flex items-center justify-center bg-cover text-center" style="background-image: url('home.jpeg'); height: 100vh;background-size: auto;">
 <div class="absolute inset-0 bg-black-50"></div> <!-- Overlay -->
-<div class="relative z-9">
-    <h2 class="text-7xl font-semibold text-white mb-4">Increase your revenue by filling your sales pipeline</h2>
-    <p class="text-3xl font-bold text-white">We create B2B lead generation systems using inbound and outbound methods</p>
-    <div  class="flex flex-wrap mt-28 ">
-      <div class="flex-auto p-4"> <button onclick="myFunction()" class="btn   text-3xl bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700  px-7 py-4  leading-5 rounded-full font-semibold text-white">
-        Get Free Lead List 
-          </button></div> 
-          <div class="flex-auto p-4 ">  <button onclick="myFunction()" class="btn   text-3xl bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700  px-7 py-4  leading-5 rounded-full font-semibold text-white">
+<div class="relative z-9 ">
+    <h2 class="text-3xl md:text-7xl font-semibold text-white mb-4">Increase your revenue by filling your sales pipeline</h2>
+    <p class="text-xl md:text-3xl font-bold text-white">We create B2B lead generation systems using inbound and outbound methods</p>
+    <div  class="flex flex-wrap mt-12 md:mt-28 ">
+     
+          <div class="flex-auto p-4">
+            <a href="#caseStudies"  class="btn text-xl  md:text-3xl bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 px-7 py-2 leading-5 rounded-full font-semibold text-white">
+              Get Free Lead List 
+            </a>
+        </div>
+        <div class="flex-auto p-4">
+          <a href="https://calendly.com/ram-mono/getting_clients" target="_blank" class="btn text-xl md:text-3xl bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 px-7 py-2 leading-5 rounded-full font-semibold text-white">
             Free Lead gen Aduit
-          </button></div>
-          <div class="flex-auto p-4">   <button onclick="myFunction()" class="btn   text-3xl bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700  px-7 py-4  leading-5 rounded-full font-semibold text-white">
-            Case studies
-
-          </button></div>
+          </a>
+      </div>
+              
+          <div class="flex-auto p-4">
+            <a href="#caseStudies" class="btn text-xl md:text-3xl bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 px-7 py-2 leading-5 rounded-full font-semibold text-white">
+                Case studies
+            </a>
+        </div>
+        
 
     </div>
 </div>
 
 </section>
-
-<div class=""> 
-    <h2 class="text-3xl">Our Clients</h2>
+<section>
+<div class="bg-gray-500 py-8"> 
+    <h2 class="text-4xl font-bold text-white text-center">Our Clients</h2>
   
 
 
 <div class="scroller" data-speed="fast">
   <ul class="tag-list scroller__inner">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JS</li>
-    <li>SSG</li>
-    <li>webdev</li>
-    <li>animation</li>
-    <li>UI/UX</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JS</li>
-    <li>SSG</li>
-    <li>webdev</li>
-    <li>animation</li>
-    <li>UI/UX</li>
-    <li>JS</li>
-    <li>SSG</li>
-    <li>webdev</li>
-    <li>animation</li>
-    <li>UI/UX</li>
+    <li> <img class="client" src="Clients/workfast.svg" alt="Work Fast" ></li>
+    <li> <img class="client" src="Clients/vibi.png"  alt="Vibi" ></li>
+    <li> <img class="client" src="Clients/tevatel.svg"  alt="Tevatel" ></li>
+    <li> <img class="client" src="Clients/ryzeai.png"  alt="Ryzeai" ></li>
+    <li> <img class="client" src="Clients/tmbc.png"  alt="TMBC" ></li>
+    <li> <img class="client" src="Clients/Cape.webp"  alt="CAPE" ></li>
+    <li> <img class="client" src="Clients/workfast.svg" alt="Work Fast" ></li>
+    <li> <img class="client" src="Clients/vibi.png"  alt="Vibi" ></li>
+    <li> <img class="client" src="Clients/tevatel.svg"  alt="Tevatel" ></li>
+    <li> <img class="client" src="Clients/ryzeai.png"  alt="Ryzeai" ></li>
+    <li> <img class="client" src="Clients/tmbc.png"  alt="TMBC" ></li>
+    <li> <img class="client" src="Clients/Cape.webp"  alt="CAPE" ></li>
+    
   </ul>
 </div>
+</section>
+<section>
+<div class="bg-black text-white py-8">
+  <div class="flex items-center justify-center" >
+    <div class="text-center">
+        <div class="text-4xl font-bold mb-4">
+         Introducing
+            
+            <span class="text-blue-600">ElevasionX</span>
+        </div>
+       
+    </div>
+    <div>
+      <p class="text-gray-400 text-xl py-2">
+        ElevasionX is a lead generation agency that works on a complete performance basis. Our
+        entire goal is to fill your sales pipeline with meetings using inbound and outbound systems.    </p>
+        <p class="text-gray-400 text-xl py-2">
+          No monthly retainers. We only get paid based on the performance we generate for you. That's
+ how confident we are in our process."
+        </p>
+        
+        
+    </div>
+    
+</div>
+
+</div>
+
+</section>
+<section class="bg-gray-500 py-8">
+  <marquee class="text-7xl text-white" width="100%" direction="left" height="100px">
+    Work with Experts - A dedicated account manager will personally onboard you, send weekly reports, and conduct monthly check-in calls.
+    </marquee>
+  
+</section>
+<section>
+  <div class="bg-black text-white py-16">
+    <div class="container mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold">How it works</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div class="border-r border-gray-700 last:border-r-0">
+                <h3 class="text-blue-500 text-lg">Step 1</h3>
+                <h4 class="text-2xl font-bold">Book a call</h4>
+                <p class="text-gray-400">Get a lead generation audit to see if our solutions are right for your business.</p>
+            </div>
+            <div class="border-r border-gray-700 last:border-r-0">
+                <h3 class="text-blue-500 text-lg">Step 2</h3>
+                <h4 class="text-2xl font-bold">Growth plan</h4>
+                <p class="text-gray-400"> Instant Growth plan- We will build a custom plan to bridge the gap between where you
+                  are now and where you want to be.</p>
+            </div>
+            <div class="border-r border-gray-700 last:border-r-0">
+                <h3 class="text-blue-500 text-lg">Step 3</h3>
+                <h4 class="text-2xl font-bold">Schedule a Kickoff Call</h4>
+                <p class="text-gray-400"> Our account managers will review your onboarding form with you to develop an initial campaign
+                  strategy.</p>
+            </div>
+            <div class="border-r border-gray-700 last:border-r-0">
+                <h3 class="text-blue-500 text-lg">Step 4</h3>
+                <h4 class="text-2xl font-bold">Launch</h4>
+                <p class="text-gray-400"> Launch a campaign based on your needs and goals- deals coming your way.</p>
+            </div>
+            
+        </div>
+        <div class="text-center mt-12">
+            <a href="https://calendly.com/ram-mono/getting_clients" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book a call</a>
+        </div>
+    </div>
+</div>
+
+</section>
+<section>
+  <div class="bg-gray-500 text-white py-16">
+    <div class="flex items-center justify-center">
+        <div class="bg-black p-8 rounded-lg w-full md:w-3/4 lg:w-1/2">
+            <h2 class="text-3xl font-bold mb-4">What Includes For your campaign</h2>
+            <div class="border-b border-gray-300 mb-6"></div>
+           
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div>
+                    <p class="flex items-center mb-2"><span class="text-green-400 mr-2">✔</span>Dedicated Manager</p>
+                    <p class="flex items-center mb-2"><span class="text-green-400 mr-2">✔</span>Weekly Report</p>
+                    <p class="flex items-center mb-2"><span class="text-green-400 mr-2">✔</span>Monthly Check-In Call</p>
+                    <p class="flex items-center mb-2"><span class="text-green-400 mr-2">✔</span>1-On-1 Onboarding Support</p>
+                </div>
+                <div>
+                    <p class="flex items-center mb-2"><span class="text-green-400 mr-2">✔</span>Built Lead List</p>
+                    <p class="flex items-center mb-2"><span class="text-green-400 mr-2">✔</span>Inbox Management</p>
+                    <p class="flex items-center mb-2"><span class="text-green-400 mr-2">✔</span>ICS (Ideal Customer Situation)</p>
+                    <p class="flex items-center mb-2"><span class="text-green-400 mr-2">✔</span>Manage Ad Account</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="https://calendly.com/ram-mono/getting_clients" class="inline-block bg-transparent border-2 border-white text-white font-semibold py-2 px-6 rounded-full hover:bg-white hover:text-blue-700 transition duration-300">
+                    GET STARTED
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
 
 
 
     </div>
-<section id="caseStudies" class="pt-20">
+<section id="caseStudies" class="pt-20 border border-black">
    
          
 </section>
-<section id="testimonials" class="pt-20">
+<section id="testimonials" class="pt-20 border border-black">
    
          
 </section>
 <section id="whyUs" class="pt-20">
+<div   class="max-w-7xl mx-auto p-6 bg-white shadow-lg rounded-lg  border border-black">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Why Us</h2>
+    <ul class="space-y-4">
+        <li class="flex items-center">
+            <div class="text-2xl text-green-500 mr-3">✓</div>
+            <p class="text-gray-700 text-lg">We do not charge anything upfront.</p>
+        </li>
+        <li class="flex items-center">
+            <div class="text-2xl text-green-500 mr-3">✓</div>
+            <p class="text-gray-700 text-lg">We help with lead generation, appointment booking, and conversion optimization.</p>
+        </li>
+        <li class="flex items-center">
+            <div class="text-2xl text-green-500 mr-3">✓</div>
+            <p class="text-gray-700 text-lg">We generate leads through both inbound and outbound systems.</p>
+        </li>
+        <li class="flex items-center">
+            <div class="text-2xl text-green-500 mr-3">✓</div>
+            <p class="text-gray-700 text-lg">We use the Ideal Client Situation (ICS) method for our email copy.</p>
+        </li>
+        <li class="flex items-center">
+            <div class="text-2xl text-green-500 mr-3">✓</div>
+            <p class="text-gray-700 text-lg">We build a lead list and use that list for our ad campaigns.</p>
+        </li>
+        <li class="flex items-center">
+            <div class="text-2xl text-green-500 mr-3">✓</div>
+            <p class="text-gray-700 text-lg">The ad campaign provides more touchpoints to our prospects, so they are ready to buy before they come to a call.</p>
+        </li>
+        <li class="flex items-center">
+            <div class="text-2xl text-green-500 mr-3">✓</div>
+            <p class="text-gray-700 text-lg">We convert cold prospects into warm prospects, making it easier for you to convert them.</p>
+        </li>
+    </ul>
+</div>
+  </section>  
+         
+
+<section id="ourStrategy" class="pt-20 border border-black">
    
          
 </section>
-<section id="ourStrategy" class="pt-20">
+<section id="blog" class="pt-20 border border-black">
    
          
 </section>
-<section id="blog" class="pt-20">
-   
-         
+<section class="max-w-7xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+  <h2 class="text-3xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+  <div class="space-y-6">
+      <div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">1. What is a Ready Lead?</h3>
+          <p class="text-gray-700">A "Meeting-Ready-Lead" is a lead that expresses interest in your product or service and has scheduled a specific date or time to discuss a demo. On average, our clients convert approximately 85-95% of these leads into demos.</p>
+      </div>
+      <div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">2. How do we handle the leads?</h3>
+          <p class="text-gray-700">After generating a meeting-ready lead, we will book the meeting directly through your calendar and include the entire email conversation. Just take the call.</p>
+      </div>
+      <div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">3. Does your team take care of management?</h3>
+          <p class="text-gray-700">Yes, our team will take care of everything from inbox setup, lead list building, writing copy, managing the campaign, and handling responses.</p>
+      </div>
+      <div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">4. What if the lead isn't qualified?</h3>
+          <p class="text-gray-700">Meeting-Ready-Leads are not your typical PPC leads. These leads are highly qualified because we target sophisticated buyers who show direct interest in your product/service and are willing to schedule a call. We reach out to a lead list approved by you with a hyper-personalized message and manage responses to convert them into meeting-ready leads.</p>
+      </div>
+  </div>
 </section>
+<section class="bg-gray-900 text-gray-400 py-8">
+  <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center">
+          <div>
+              <p class="text-gray-500">© Advanced Client. 2024</p>
+          </div>
+          <!-- <div class="flex space-x-8"> -->
+              <div>
+                  <h6 class="text-white mb-2">Navigation</h6>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="hover:underline">Our Process</a></li>
+                      <li><a href="#" class="hover:underline">Roi Calculator</a></li>
+                      <li><a href="#" class="hover:underline">Case Studies</a></li>
+                      <li><a href="#" class="hover:underline">Book a Call</a></li>
+                      <li><a href="#" class="hover:underline">FAQ's</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h6 class="text-white mb-2 pr-20">Follow us</h6>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="hover:underline">LinkedIn</a></li>
+                      <li><a href="#" class="hover:underline">YouTube</a></li>
+                      <li><a href="#" class="hover:underline">Careers</a></li>
+                  </ul>
+              </div>
+          <!-- </div> -->
+      </div>
+      <div class="flex justify-between items-center">
+        <div class="mt-8 flex justify-start space-x-8">
+            <a href="privacy-policy.html" class="text-gray-500 hover:underline">Privacy Policy</a>
+            <a href="billing-policy.html" class="text-gray-500 hover:underline">Billing Policy</a>
+        </div>
+        <div class="mt-8 flex justify-end">
+            <a href="terms-and-conditions.html" class="text-gray-500 hover:underline">Terms and Conditions</a>
+        </div>
+    </div>
+    
+  </div>
+</section>
+
 
 <script>document.addEventListener('DOMContentLoaded', function () {
     var homeSection = document.getElementById('home');
